@@ -83,7 +83,7 @@ export default {
     }
   },
   beforeCreate() {
-    axios.get('http://localhost:5500/data.json')
+    axios.get('https://api.jsonbin.io/b/5dd2d56f2e22356f234dcb66/')
       .then(response => {
         this.product = response.data.products.filter(prod => prod.id == this.$route.params.productId)[0];
       });
