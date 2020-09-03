@@ -39,7 +39,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://localhost:5500/data.json') //find data.json in root directory. Move it to a folder with only index.html and data.json, run it in a different port (ex. if you're running vuejsshop in :8080, run data in :5500 because vue-router will block access to data.json if you run it in the same port that vujsshop)
+    axios.get('https://api.jsonbin.io/b/5dd2d56f2e22356f234dcb66/') //find data.json in root directory. Move it to a folder with only index.html and data.json, run it in a different port (ex. if you're running vuejsshop in :8080, run data in :5500 because vue-router will block access to data.json if you run it in the same port that vujsshop)
         .then(response => {
           this.products = response.data.products
         })

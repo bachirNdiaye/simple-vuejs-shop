@@ -34,7 +34,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://localhost:5500/data.json')
+    axios.get('https://api.jsonbin.io/b/5dd2d56f2e22356f234dcb66/')
       .then(response => this.pageData = response.data.contact);
   }
 }
